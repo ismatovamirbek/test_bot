@@ -1,6 +1,6 @@
 from aiogram import types
 from aiogram.dispatcher import FSMContext
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from inline_buttons import *
 from aiogram.dispatcher.filters import Text
 from settings import dp, bot
 from register import Register
@@ -9,13 +9,7 @@ from default_buttons import phone_button
 CHANNEL_ID = -1002295008102  # Kanal ID
 GROUP_ID = -1002320531230    # Guruh ID
 
-# Ha yoki Yo'q tugmalarini inline tarzda yaratish
-confirm_buttons = InlineKeyboardMarkup(
-    inline_keyboard=[
-        [InlineKeyboardButton("✅ Ha", callback_data="confirm_yes")],
-        [InlineKeyboardButton("❌ Yo'q", callback_data="confirm_no")]
-    ]
-)
+
 
 # Markdown maxsus belgilarini tozalash funksiyasi
 import re

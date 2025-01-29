@@ -1,6 +1,7 @@
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
 class Register(StatesGroup):
-    full_name = State()       # Foydalanuvchi ism va familiyasini kiritish
-    phone_number = State()    # Foydalanuvchi telefon raqamini yuborish
-    confirmation = State()    # Foydalanuvchi ma'lumotlarni tasdiqlash
+    full_name = State()
+    phone_number = State()
+    course = State()  # <== BU YANGI QO'SHILGAN QATOR
+    confirmation = State()

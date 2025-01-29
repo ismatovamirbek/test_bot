@@ -69,16 +69,18 @@ our_courses = InlineKeyboardMarkup(
 
 
 
+# Ro‘yxatdan o‘tish tugmasi
 register_course = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="Ro'yxatdan o'tish", callback_data="register")
+            InlineKeyboardButton(text="Ro'yxatdan o'tish", callback_data="register_course")
         ],
         [
             InlineKeyboardButton(text="↩️ Back", callback_data="about_back")
         ]
     ]
 )
+
 
 # Ha yoki Yo'q tugmalarini inline tarzda yaratish
 confirm_buttons = InlineKeyboardMarkup(
@@ -87,4 +89,20 @@ confirm_buttons = InlineKeyboardMarkup(
         [InlineKeyboardButton("❌ Yo'q", callback_data="confirm_no")]
     ]
 )
+
+
+during_register = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="Kiber Xavfsizlik", callback_data="kiber"),
+            InlineKeyboardButton(text="Front-End Dasturlash", callback_data="front")
+        ],
+        [
+            InlineKeyboardButton(text="Back-End Dasturlash", callback_data='back-end'),
+            InlineKeyboardButton(text="Grafik Dizayn", callback_data="design")
+        ]
+    ]
+)
+
+
 

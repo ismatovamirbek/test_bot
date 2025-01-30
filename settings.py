@@ -9,3 +9,4 @@ storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
 CHANNEL_ID = -1002295008102
+GROUP_ID = -1002320531230    # Guruh ID

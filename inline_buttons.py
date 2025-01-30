@@ -105,4 +105,11 @@ during_register = InlineKeyboardMarkup(
 )
 
 
+# Ha yoki Yo'q tugmalarini inline tarzda yaratish
+confirm_buttons = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [InlineKeyboardButton("✅ Ha", callback_data="confirm_yes")],
+        [InlineKeyboardButton("❌ Yo'q", callback_data="confirm_no")]
+    ]
+)
 

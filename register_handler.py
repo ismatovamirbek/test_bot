@@ -105,7 +105,7 @@ async def start_register(call: types.CallbackQuery, state: FSMContext):
 
     # Kanalga obuna bo'lishini tekshiramiz
     is_subscribed = await check_subscription(user_id)
-
+    # hello
     if not is_subscribed:
         await call.answer("Iltimos, botdan foydalanish uchun kanalga obuna bo'ling.", show_alert=True)
         await call.message.answer("Obuna bo'lish uchun kanalimga kirib obuna bo'ling: [Kanalga Obuna Bo'lish](https://t.me/my_test_group7)", parse_mode=types.ParseMode.MARKDOWN)
